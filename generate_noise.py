@@ -135,7 +135,7 @@ def process_audio(input_file, output_file, desired_length_seconds, apply_filter)
     wav.write(output_file, fs, processed_data)
 
     # If the audio is stereo, save the left and right channels to separate files
-    if processed_data.shape[1] == 2:
+    if processed_data.ndim > 1 and processed_data.shape[1] == 2:
         split_stereo_to_mono_files(output_file, processed_data, fs)
 
 def main():
