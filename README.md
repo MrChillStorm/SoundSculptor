@@ -50,7 +50,7 @@ All scripts require Python 3 and the following Python packages:
 You can install these packages with pip:
 
 ```bash
-pip install numpy scipy pyloudnorm pydub
+pip3 install numpy scipy pyloudnorm pydub
 ```
 
 ## Notes
