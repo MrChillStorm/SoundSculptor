@@ -44,14 +44,13 @@ All scripts require Python 3 and the following Python packages:
 
 * `numpy`
 * `scipy`
-* `argparse`
 * `pyloudnorm`
 * `pydub`
 
 You can install these packages with pip:
 
 ```bash
-pip install numpy scipy argparse pyloudnorm pydub
+pip install numpy scipy pyloudnorm pydub
 ```
 
 ## Notes
