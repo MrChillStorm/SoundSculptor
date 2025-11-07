@@ -48,16 +48,34 @@ python3 split_stereo_wav.py <input_file.wav>
 
 ## Requirements
 
-All scripts require Python 3 and the following Python packages:
+All scripts require **Python 3** and the following Python packages:
 
-* `numpy`
-* `scipy`
-* `pyloudnorm`
+| Script                  | Required Packages       |
+|-------------------------|-------------------------|
+| `generate_noise.py`     | `numpy`, `scipy`        |
+| `headset-filter.py`     | `numpy`, `scipy`        |
+| `split_stereo_wav.py`   | `pydub`                 |
 
-You can install these packages with pip:
+## Install with `pip`:
 
 ```bash
-pip3 install numpy scipy pyloudnorm
+# Core scientific packages (for generate_noise.py and headset-filter.py)
+pip3 install numpy scipy
+```
+
+```bash
+# Audio manipulation (for split_stereo_wav.py)
+pip3 install pydub
+```
+
+**Note**: `pydub` requires `ffmpeg` for WAV handling. Install it via your system package manager:
+
+```bash
+# macOS (with Homebrew)
+brew install ffmpeg
+
+# Ubuntu/Debian
+sudo apt install ffmpeg
 ```
 
 ## Notes
