@@ -46,6 +46,7 @@ python3 generate_noise.py <input_file> [-o output_file] [-l length] [-f] [-q qua
 python3 split_stereo_wav.py <input_file.wav>
 ```
 * `input_file.wav`: The stereo input wav file.
+* The script will create two files named `<input_file>-left.wav` and `<input_file>-right.wav` in the same directory as the input file.
 
 ## Requirements
 
@@ -81,5 +82,4 @@ sudo apt install ffmpeg
 
 ## Notes
 
-The EQ gains used in the scripts are based on the **Bose Aviation Headset X**. You can modify these values as per your requirement.  
-The `split_stereo_wav.py` script will create two files named `<input_file>-left.wav` and `<input_file>-right.wav` in the same directory as the input file.
+The EQ gains used in the scripts are based on the **Bose Aviation Headset X**. You can modify these values as per your requirement.
