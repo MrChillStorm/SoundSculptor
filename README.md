@@ -12,7 +12,8 @@ This repository contains three Python scripts to assist in audio processing:
    - Temporal modulation per frequency band
    - Higher-order statistics (kurtosis) for transient realism
    - Power Spectral Density (PSD) with smoothed fine-tuning
-   - Loudness (ITU-R BS.1770)
+   - Loudness (RMS + true peak limiting)
+   
    The output can be filtered with the **Bose Aviation Headset X EQ curve** to simulate what a pilot hears. Supports mono/stereo, quality tiers (`low`, `medium`, `high`), and **reproducible output via `--seed`**.
 
 3. `split_stereo_wav.py`: This script takes a stereo WAV file as input and splits it into two separate WAV files, one for the left channel and one for the right channel.
